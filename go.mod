@@ -1,6 +1,6 @@
 module go.opscenter.dev/james-go-client
 
-go 1.22.1
+go 1.23.0
 
 toolchain go1.23.1
 
@@ -10,7 +10,7 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/google/uuid v1.6.0
 	github.com/stretchr/testify v1.9.0
-	golang.org/x/oauth2 v0.23.0
+	golang.org/x/oauth2 v0.27.0
 	k8s.io/apimachinery v0.30.2
 	xorm.io/xorm v1.3.9
 )
