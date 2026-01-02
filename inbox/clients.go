@@ -211,7 +211,7 @@ func (j *JMAPClient) renew() error {
 				lastErr = err
 				return false, nil
 			}
-			if err := j.Client.Authenticate(); err != nil {
+			if err := j.Authenticate(); err != nil {
 				lastErr = err
 				return false, nil
 			}
