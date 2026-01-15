@@ -1,16 +1,14 @@
 module go.opscenter.dev/james-go-client
 
-go 1.22.1
-
-toolchain go1.23.1
+go 1.25.5
 
 require (
 	git.sr.ht/~rockorager/go-jmap v0.5.0
-	github.com/golang-jwt/jwt/v5 v5.2.1
+	github.com/golang-jwt/jwt/v5 v5.2.2
 	github.com/google/go-cmp v0.6.0
 	github.com/google/uuid v1.6.0
 	github.com/stretchr/testify v1.9.0
-	golang.org/x/oauth2 v0.23.0
+	golang.org/x/oauth2 v0.33.0
 	k8s.io/apimachinery v0.30.2
 	xorm.io/xorm v1.3.9
 )
@@ -27,4 +25,4 @@ require (
 	k8s.io/utils v0.0.0-20240502163921-fe8a2dddb1d0 // indirect
 )
 
-replace git.sr.ht/~rockorager/go-jmap => github.com/ops-center/go-jmap v0.5.1-0.20250107173053-f306fc3d04c3
+replace git.sr.ht/~rockorager/go-jmap => github.com/ops-center/go-jmap v0.5.1-0.20260102105353-98aadadc3481
