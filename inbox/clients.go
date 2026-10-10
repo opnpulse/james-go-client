@@ -117,7 +117,8 @@ func (w *WebAdminClient) refreshRequired() bool {
 
 func (w *WebAdminClient) renew() error {
 	var lastErr error
-	err := wait.PollUntilContextTimeout(context.TODO(), 3*time.Second, 1*time.Minute, true,
+	err := wait.PollUntilContextTimeout(
+		context.TODO(), 3*time.Second, 1*time.Minute, true,
 		func(ctx context.Context) (bool, error) {
 			hc, token, err := w.tokenGetter()
 			if err != nil {
